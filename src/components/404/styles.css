@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(45deg, rgb(17, 2, 3), #DB202C);
+    height: 100vh;
+    z-index: 999;
+}
+
+.content-root {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    bottom: 0%;
+    display: flex;
+    align-items: center;
+    background-image: url('https://i.imgur.com/D663eyn.png');
+}
+
+.content {
+    max-width: 600px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 200px;
+    line-height: 1em;
+    color: #fff;
+}
+
+.content h4 {
+    border-radius: 25px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #111;
+    background: #fff;
+    padding: 10px 20px;
+    display: inline-block;
+}
+
+
+.content a {
+    transition: .2s;
+    display: inline-block;
+    padding: 10px 25px;
+    background: var(--primary);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.content a:hover {
+    background: rgb(182, 27, 37);
+}
+
+@media screen and (max-width: 400px) {
+    .content h4 {
+        width: 90%;
+        font-size: 1em;
+    }
+ }
