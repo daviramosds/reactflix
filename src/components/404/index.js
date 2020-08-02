@@ -2,9 +2,9 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import './styles.css'
 
-
 function Pagina404() {
     return (
+    <div className="body">
         <section className="content-root">
             <div className="content">
                 <h2>404</h2>
@@ -15,6 +15,7 @@ function Pagina404() {
                 </Link>
             </div>
         </section>
+    </div>
     )
 }
 
