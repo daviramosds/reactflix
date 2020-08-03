@@ -11,6 +11,7 @@ import categoriasRepository from '../../../repostitories/categorias'
 function CadastroVideo() {
     const history = useHistory()
     const [categorias, setCategorias] = useState([])
+    const categoryTitles = categorias.map(({ titulo }) => titulo)
     const { handleChange, values } = useForm({
     titulo: '',
     url: '',
@@ -24,8 +25,6 @@ function CadastroVideo() {
           setCategorias(categoriasFromServer)
       })
   }, [])
-
-  console.log(categorias)
 
   return (
     <PageDefault>
@@ -67,6 +66,7 @@ function CadastroVideo() {
           name="categoria"
           value={values.categoria}
           onChange={handleChange}
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
