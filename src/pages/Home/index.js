@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useEffect, useState } from 'react';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
